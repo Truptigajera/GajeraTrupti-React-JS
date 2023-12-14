@@ -52,16 +52,25 @@ body{
 .diagonal-linear-gradient {
     height: 500px;
     width:100%;
-    background: linear-gradient(to bottom   , red 80% , yellow 20%);
+    background: linear-gradient(to right yellow 20%, to left red 80%);
 
 } 
 
 .linear-gradient-rainbow {
-    height: 300px;
+    height: 500px;
     width:500px;
     border-radius: 100%;
+    display: flex;
+    align-items: center;
     background: linear-gradient(to top, red, orange, yellow, green, blue, indigo, violet)
-} 
+     } 
+
+.linear-gradient-rainbow p{
+    font-size: 20px;
+    color: red;
+    width: 500px;
+    text-align: center;
+    }
 .radial-gradient-simple {
     height: 800px;
     width:100%;
@@ -150,4 +159,62 @@ body{
     border-right:40px dashed blue;
     border-right-color:orange;
     border-top-style:dotted;
+}
+font-family: 'Kalam', cursive;
+
+.maindiv{
+    position: relative;
+}
+.border-radius{
+    height: 400px;
+    width: 400px;
+    border:10px solid green;
+    border-radius: 20px;
+    border-radius: 20px 40px;
+    border-radius: 20px 40px 60px;
+    border-radius: 20px 40px 60px 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.border-radius img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+}
+.circle{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+    border-radius: 100%;
+    overflow: hidden;
+    border:10px solid white;
+}
+.circle img{
+    height: 200px;
+    width: 200px;
+} 
+.outline{
+    height: 200px;
+    width: 200px;
+    border:10px solid orange;
+    margin: 200px;
+    outline: 10px dotted green;
+    outline-offset: 10px    ;
+} 
+.opacity{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(255,0,0,0.5);
+    text-align: center;
+    font-style:var();
 }
