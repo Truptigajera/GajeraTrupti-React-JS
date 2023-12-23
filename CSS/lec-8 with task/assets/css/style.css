@@ -13,6 +13,7 @@
     border: 2px solid black;
     display: grid;
     grid-template-columns: auto auto auto;
+    justify-content: flex-start;
     
     
 }
@@ -75,12 +76,12 @@
     width: 100px;
     background-color: rgb(223, 120, 180);
     align-self: end;
-    flex-wrap: wrap;
+    
 }
 .maindiv div:nth-child(9){
     height: 100px;
     width: 100px;
     background-color: rgb(10, 73, 26);
     align-self: end;
-    justify-content: flex-start;
+
 }
