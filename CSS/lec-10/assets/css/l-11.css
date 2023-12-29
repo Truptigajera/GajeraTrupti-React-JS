@@ -28,7 +28,7 @@ body{
     border: 2px solid red;
      height: 400px;
     width: 400px;
-    margin:200px 300px;
+    margin:100px 300px;
 }
 .cover:hover .content{
     transform: perspective(600px) rotate3d(240 , 240 , 240 , 241deg);

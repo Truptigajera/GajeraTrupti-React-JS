@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+  }
+  
+  /* Css Icons */
+  
+  /************ css overlay ***********/
+  
+  .maindiv{
+    display: flex;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+  }
+  
+  /* .box-1{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    position: absolute;
+  }
+  .box-2{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    opacity: 0.4;
+  } */
+  
+  img{
+    position: absolute;
+    object-fit: cover;
+    object-position:right;
+  }
+  span{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+  }
+  .text{
+    position: absolute;
+    color:white;
+     align-items: center;
+     inset: 0 0 0 0;
+     margin-top: 250px;
+     left: 200px;
+    }
+  
+  .maindiv:hover span{
+    background-color: black;
+    opacity: 0.5;
+  }
+  .text:hover div{
+    text-align: center;
+  }
+  
+
+  .mainbox{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+.box_text{
+    height: 400px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 400px;
+    transition-property: left;
+    transition-duration: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox:hover .box_text{
+    left: 0;
+}
+
+.font{
+    font-size: 32px;
+    color: #fff;
+}
