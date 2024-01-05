@@ -135,16 +135,19 @@ ul,ol{
     display: flex;
     padding: 0 10px;
 }
-.i-1{
-    color:rgba(82, 82, 199, 0.993);
-	font-size: 40px;
+.i-1 img{
+    /* font-size: 40px; */
 	padding-right: 15px;
+    height: 53px;
+    width: 70px;
 }
 .text-1 h3{
-    /* font-size: 24px; */
+    font-size: 22px;
 	color: rgba(24, 23, 23, 0.911);
-    font-weight: 900;
+    font-weight: bold;
  	padding-bottom: 15px;
+    letter-spacing: normal;
+    line-height: 30.8px;
 }
 .text-1 p{
     font-size: 16px;
