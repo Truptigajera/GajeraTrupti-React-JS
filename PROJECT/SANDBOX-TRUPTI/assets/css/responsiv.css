@@ -2,38 +2,15 @@
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (max-width :1400px) {
+@media (max-width :1200px) {
     
 }
  /* Large devices (laptops/desktops, 992px and up) */
  @media(max-width: 992px) {
-    .icon{
-      display: none;
-    }
+     
   }
   /* Medium devices (landscape tablets, 768px and up) */
   @media (max-width: 768px) {
-    nav ul{
-      display: none;
-      margin: 0;
-      padding: 0;
-    }
+     
 }
-/* nav:focus-within ul{
-    display: block;
-    position: absolute;
-    top:0;
-    background-color:white;
-    border:5px solid rgb(0, 140, 227);
-    height: 100vh;
-    left: 0;
-    z-index: 1000;
-    animation-name: slide;
-    animation-duration: 0.4s;
-  }
-  nav ul li{
-    text-align: center;
-    margin: 50px 50px;
-  }
 
-  */
