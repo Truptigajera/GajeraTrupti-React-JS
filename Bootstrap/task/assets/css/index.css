@@ -130,22 +130,23 @@
 } */
 
 /* task-6 */
-.col-4{
+.col-md-4{
     background-color: blue;
-    border: 1px solid white;
-    padding: 15px;
-    
+    padding: 10px;
+    border: 2px solid white;
+    height: 50px;
 }
-.col-6{
-    background-color: rgb(78, 78, 145);
-    padding: 15px;
-    border: 1px solid white;
+.col-lg-6{
+    background-color: gray;
+    padding: 10PX;
+    border: 2px solid white;
+    height: 50px;
 }
-.col-lg-4{
+.col-xl-4{
     background-color: aqua;
-    padding: 15px;
-    border: 1px solid white;
-} 
-
+    padding: 10px ;
+    border: 2px solid white;
+    height: 50px;
+}
 /* task-7 */
 
