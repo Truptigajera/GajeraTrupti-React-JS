@@ -15,7 +15,7 @@
 
 <body class="d-flex justify-content-center align-items-center">
     <div class="container rounded-3 bg-white">
-        <form action="">
+        <form class="row g-3 needs-validation" novalidate>
             <div class="row justify-content-between">
                 <div class="part-1 col col-6">
                     <div class="col m-2">
@@ -40,7 +40,10 @@
                     <div class="form-group">
                         <label for="exampleInputEmail1" class="mb-2">USERNAME</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Username">
+                            placeholder="Username" required>
+                            <div class="valid-feedback">
+                                looks good!
+                            </div>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1" class="mb-2">USERNAME</label>
@@ -75,6 +78,9 @@
                         <button type="button" class="btn btn-outline-primary"><i class="fa-brands fa-facebook-f"></i> Facebook</button>
                     </div>
                 </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">submit form</button>
             </div>
         </form>
     </div>
