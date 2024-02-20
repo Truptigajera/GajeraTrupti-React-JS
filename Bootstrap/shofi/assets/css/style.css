@@ -508,7 +508,7 @@ img.d-block.object-fit-cover {
 .feature-inner{
     background: var(--tp-common-white);
     border: 1px solid #E9EAEC;
-    padding: 30px 40px 23px;
+    padding: 20px 32px 15px 35px;
 }  
 .title-2 {
     font-weight: 500;
@@ -527,6 +527,99 @@ img.d-block.object-fit-cover {
     line-height: 26px;
 }
 .vertical-line{
-    width: 1px;
+    border-left: 1px solid #E9EAEC;
+    /* margin: -20px -10px -5px px; */
+    padding: -10px 10px 10px 10px;
+    align-items: center;
 }
+.instagram-item-2 img{
+    height: 236px;
+    width: 212px;
+}
+/* footer */
+.footer-desc{
+    font-family: jost, sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: start;
+    letter-spacing: normal;
+    color: #010f1c;
+}
+.footer-social {
+     
+    font-size: 14px;
+}
+.footer-icon i{
+    height: 35px;
+    width: 35px;
+    border: 1px solid #b9babb;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+.footer-widget-title{
+    font-family: jost, sans-serif;
+    font-size:23px ;
+    line-height: 27.6px;
+    color: #010f1c;
+    letter-spacing: normal;
+    font-weight: 700;
+}
+.tp-footer-widget ul li  {
+    font-family: jost, sans-serif;
+    font-size: 15px;
+    font-weight: 400; 
+    margin-bottom: 10px;
+}
+::marker {
+    color: #55585b;
+}
+.talk-got{
+    font-family: jost, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #55585b;
+}
+.footer-text{
+    font-family: jost, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #55585b;
+}
+.widget a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: gray;
+    margin-left: 8px;
+}
+.tp-footer-style-2 .tp-footer-bottom-wrapper {
+    border-color: #E4E5E8;
+}
+.tp-footer-bottom-wrapper {
+    padding-top: 18px;
+    padding-bottom: 40px;
+    border-top: 1px solid rgba(1, 15, 28, 0.1);
+}
+.tp-footer-copyright p{
+    font-family: jost, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #727679;
+}
+.tp-footer-copyright a{
+    font-family: jost, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #bd844c;
+}
+ 
+   
+
+
+
 
