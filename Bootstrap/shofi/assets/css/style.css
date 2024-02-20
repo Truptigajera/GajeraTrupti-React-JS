@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+body{
+    font-family:jost, sans-serif ;
+}
 
 a {
     text-decoration: none;
@@ -84,6 +87,41 @@ img.d-block.object-fit-cover {
 .winter-text {
     position: absolute;
     top: 20%;
+}
+.fa-chevron-down{
+    font-size: 12px;
+    color: #010b14;
+}
+.navbar-nav{
+    font-family: jost, sans-serif;
+    color: #010b14;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: normal;
+    text-align: left;
+    font-weight: 500;
+
+}
+ /* .show{
+    pointer-events: all;
+    position: absolute;
+    right: 20%;
+    width: fit-content;
+}  */
+.five-img p{
+    font-size: 18px;
+    color: #010b14;
+    font-weight: 500;
+
+}
+.five-img li a img{
+    height:125px;
+    width: 125px;
+    box-shadow: 0px 2px 6px rgba(1, 15, 28, 0.2);
+
+}
+.dropdown-toggle::after {
+    display: none;
 }
 
  

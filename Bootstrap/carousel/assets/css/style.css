@@ -3,6 +3,9 @@
 a {
     text-decoration: none;
 }
+body{
+    font-family:jost, sans-serif ;
+}
 
 /* Navbar start */
 
@@ -48,12 +51,17 @@ a {
     font-weight: 500;
 
 }
-.five-img{
-    
+.five-img p{
+    font-size: 18px;
+    color: #010b14;
+    font-weight: 500;
+
 }
 .five-img li a img{
-    height:150px ;
-    width: 150px;
+    height:125px;
+    width: 125px;
+    box-shadow: 0px 2px 6px rgba(1, 15, 28, 0.2);
+
 }
 /* .heart{
    height: 50px;
