@@ -1,0 +1,14 @@
+@import "variables";
+
+.heading h1{
+   font-size: $fh1;
+}
+.heading p{
+  font-size: $fh1;
+}
+
+.box{
+  border: 10px solid gray;
+  height: 250px;
+  width: 250px;
+}

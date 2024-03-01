@@ -11,6 +11,10 @@ a {
     z-index: 100;
     width: 100%;
 }
+.border-b{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
 .reminder{
     height: 22px;
     width: 22px;
@@ -18,8 +22,8 @@ a {
 .reminder span{
     line-height: 0;
 }
-.icons{
-    margin: 0 0 0 70px;
+.icons {
+    margin: 0 0 0 40px;
 }
 .icons span i{
     font-size: 22px;
@@ -102,6 +106,10 @@ img.d-block.object-fit-cover {
     font-weight: 500;
 
 }
+.fiveg-img img{
+    height: 271px;
+    width: 171px;
+}
  /* .show{
     pointer-events: all;
     position: absolute;
@@ -123,6 +131,11 @@ img.d-block.object-fit-cover {
 .dropdown-toggle::after {
     display: none;
 }
+.dropdown-menu[data-bs-popper]
+{
+    left: 240px;
+}
+ 
 
  
 
