@@ -3,7 +3,7 @@ import React from 'react'
 const List_rendarinf2 = () => {
   return (
     <>
-    <div>List_rendarinf2</div>
+    <div className='border'>List_rendarinf2
     <div>
     <h1 className='text-5xl text-center'>React Conditional Rendering</h1>
             <ul>
@@ -13,7 +13,7 @@ const List_rendarinf2 = () => {
                 <Listofproduct name="vivo" isStoked={false} />
             </ul>
     </div>
-
+    </div>
     </>
   )
 }

@@ -1,0 +1,5 @@
+th,td{
+  border:5px groove black;
+  padding: 7px;
+  padding-inline: 30px;
+}
