@@ -46,7 +46,7 @@ const Navbar = () => {
                                                 </DropdownItem>
                                             <DropdownItem key="copy">FAQ
                                             </DropdownItem>
-                                            <DropdownItem key="edit">Contact Us
+                                            <DropdownItem key="edit"><Link to="/ContactUs"> Contact Us</Link>
                                              </DropdownItem>
                                             
                                         </DropdownMenu>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-                                                  <Outlet/>
+        <Outlet/>
         </>
     )
 }
