@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { CiCircleRemove } from 'react-icons/ci';
-import { addtocart } from '../reduxcore/CartRedux/cartAction';
+import { addtocart, emptycart } from '../reduxcore/CartRedux/cartAction';
 import { removeToWishlist } from '../reduxcore/whishlistProduct/whishlistAction';
 import { BsCartCheck } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
