@@ -1,6 +1,12 @@
 
 import { useState } from "react";
 import { GoArrowRight } from "react-icons/go";
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 
 
 const AboutUs = () => {
@@ -26,6 +32,8 @@ const AboutUs = () => {
 
   return (
     <>
+
+
       <div>
 
         <div className="">
@@ -39,7 +47,7 @@ const AboutUs = () => {
         <div className="p-28 ">
           <div className=" grid-col-2 flex">
             <div>
-            <img className="h-[303px] w-[520px]" src="https://depot.qodeinteractive.com/wp-content/uploads/2017/01/about-img-1.jpg" alt="" />
+              <img className="h-[303px] w-[520px]" src="https://depot.qodeinteractive.com/wp-content/uploads/2017/01/about-img-1.jpg" alt="" />
             </div>
             <div className="ms-10 h-[303px] w-[600px]">
               <div className=" space-x-20">
@@ -58,7 +66,56 @@ const AboutUs = () => {
           </div>
         </div>
 
-        
+
+        <div className="bg-slate-100">
+          <div className="p-28">
+          <h1 className=" text-center text-2xl font-semibold text-[#494747] mb-8">WHAT THEY’RE SAYING</h1>
+
+            <Swiper
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div className="text-center ">
+                   <p className="px-64 mt-5 text-[#929292]">
+                    Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus. Lorem ipsum dolor sit amet, consectetur elit. In ut ullamcorper leo, eget euismod orci. Cum sociis pena tibus et magnis dis parturient montes, nascetur ipsum dolor sit amet.
+                  </p>
+                  <h1 className="mt-5 text-[#494747] font-medium">KELLY PRESTON</h1>
+                  <p className="mt-1  text-[#929292]">Developer</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="text-center">
+                   <p className="px-64 mt-5 text-[#929292]">
+                    Cum sociis natoque penatibus magnis dis parturienmontes, nasceturridiculus musestibulum ultricies aliquam convallis. Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci aliquenenan penatibus dis parturienmontes ultricies.  </p>
+                  <h1 className="mt-5 text-[#494747] font-medium">CHRISTINE PARKER</h1>
+                  <p className="mt-1  text-[#929292]">UX Designer</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="text-center">
+                   <p className="px-64 mt-5 text-[#929292]">Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus magnis dis parturienmontes, nasceturridiculus musestibulum ultricies aliquam convallis nibhelit penatibus magnis dis parturie eget.
+                  </p>
+                  <h1 className="mt-5 text-[#494747] font-medium">MASON ROBINSON</h1>
+                  <p className="mt-1  text-[#929292]">Analyst</p>
+                </div>
+              </SwiperSlide>
+
+            </Swiper>
+          </div>
+
+        </div>
+
       </div>
     </>
   );

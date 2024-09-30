@@ -8,3 +8,12 @@
         @apply bg-blue-500 p-2 m-2
     }
 } */
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    display: none;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-prev{
+    display: none;
+}
+.swiper-pagination-bullet{
+    display: none;
+}

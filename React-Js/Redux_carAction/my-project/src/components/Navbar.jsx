@@ -4,34 +4,51 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import { FaHeart } from "react-icons/fa";
-const menuItems = [
-  {
-    name: 'Home',
-    to: '/',
-  },
-  {
-    name: 'Shop',
-    to: '/shop',
-  },
-  {
-    wishlist: 'Wishlist',
-    to: '/wishlist',
-  },
-  {
-    name: 'Cart',
-    to: '/cart',
-  },
-];
+
 
 const Navbar = () => {
-  const cartItems = useSelector((state) => state.cart); // Assuming you have cart items in your Redux state
-  const wishlistItems = useSelector((state) => state.wishlist); // Selector for wishlist items
+  const cartItems = useSelector((state) => state.cart);
+   // Assuming you have cart items in your Redux state
+   const wishlistItems = useSelector((state) => state.wishlist);
+  // Selector for wishlist items
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const menuItems = [
+    {
+      name: 'Home',
+      to: '/',
+    },
+    {
+      name: 'Shop',
+      to: '/shop',
+    },
+    {
+      name: () => {
+        return(
+          <>
+          <div className='flex'>
+          <p>Wishlist</p>
+             <span className='text-white items-center flex justify-center font-semibold text-md h-5 w-5 bg-red-500 text-center rounded-full'>
+                  {wishlistItems.length}
+              </span>
+          </div>
+           
+          </>
+        )
+      },
+      to: '/wishlist',
+    },
+    {
+      name: 'Cart',
+      to: '/cart',
+    },
+  ];
 
   return (
     <>
@@ -60,14 +77,10 @@ const Navbar = () => {
                     className="text-sm font-semibold text-white hover:text-gray-900"
                   >
                     {item.name}
-                    {item.wishlist}
                   </NavLink>
                 </li>
               ))}
-              <span className='text-white items-center flex justify-center font-semibold text-md h-5 w-5 bg-red-500 text-center rounded-full'>
-                {wishlistItems.length}
-
-              </span>
+             
               {/* Display wishlist count */}
               <span className='text-white items-center flex justify-center font-semibold text-md h-5 w-5 bg-red-500 text-center rounded-full'>
                 {cartItems.length}

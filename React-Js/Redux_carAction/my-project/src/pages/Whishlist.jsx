@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { CiCircleRemove } from 'react-icons/ci';
-import { addtocart, emptycart } from '../reduxcore/CartRedux/cartAction';
+import { addtocart } from '../reduxcore/CartRedux/cartAction';
+import { addToWishlist,emptyWishlist } from '../reduxcore/whishlistProduct/whishlistAction';
 import { removeToWishlist } from '../reduxcore/whishlistProduct/whishlistAction';
 import { BsCartCheck } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
@@ -9,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Wishlist = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
   const wishlistData = useSelector((state) => state.wishlist);
 
   const Navigate = useNavigate()
@@ -26,7 +27,7 @@ const Wishlist = () => {
       </h1>
       <div className='flex justify-between'>
           <button className='btn' onClick={() => Navigate('/shop')}>BackToShop</button>
-          <button className='btn me-0' onClick={() => dispatch(emptycart())}>EmptyCart</button>
+          <button className='btn' onClick={() => dispatch(emptyWishlist())}>Emptywhishlist</button>
         </div>
       <div className='flex items-center justify-evenly'>
         <div className='w-9/12'>
